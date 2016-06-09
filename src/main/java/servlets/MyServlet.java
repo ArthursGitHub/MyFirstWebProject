@@ -24,7 +24,7 @@ public class MyServlet extends HttpServlet {
         String varTextA = "Hello World!";
         request.setAttribute("textA", varTextA);
         String varTextB = "It JSP.";
-        request.setAttribute("textB", varTextB);
+        request.setAttribute("textB_main", varTextB);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
